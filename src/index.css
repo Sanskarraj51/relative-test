@@ -1,13 +1,71 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply overflow-x-hidden   text-white bg-[#14172B];
+  }
+
+  input,
+  button {
+    @apply focus:outline-none;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hideScroll::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --header-height: 350.08px;
+  --radius: clamp(48px, 4vw, 60px);
+  --logo-size: calc(calc(var(--radius) * 2) - 1rem);
+}
+
+.logo {
+  position: absolute;
+  top: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--logo-size);
+  height: var(--logo-size);
+  border-radius: 50%;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  top: 51px;
+  height: 50px;
+  right: -36px;
+  width: 30px;
+  border-top-left-radius: 25px;
+  box-shadow: 0 -25px 0 0 #14172b;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  top: 51px;
+  height: 50px;
+  left: -36px;
+  width: 30px;
+  border-top-right-radius: 25px;
+  box-shadow: 0 -25px 0 0 #14172b;
+}
+
+.site-header {
+  background: radial-gradient(
+    circle at 50% 1%,
+    rgba(0, 0, 0, 0) var(--radius),
+    rgba(98, 106, 136, 0.1) var(--radius),
+    rgba(46, 49, 73, 0.1) 100%
+  );
 }
