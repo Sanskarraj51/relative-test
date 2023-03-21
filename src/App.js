@@ -2,6 +2,7 @@ import CryptoBox from "./component/CryptoBox";
 import { data } from "./fake-data";
 
 function App() {
+  console.log("check", data);
   return (
     <div className="min-w-[100vw] min-h-[100vh] py-8 flex flex-col justify-center   px-6   ">
       <h5 className=" flex items-center font-Tomorrow  text-[#ECF0FF] text-[16px] font-semibold  ">
