@@ -20,6 +20,7 @@ function App() {
                 profit={item?.profit}
                 color={item?.color}
                 loss={item?.loss}
+                img={item?.img}
                 key={i}
               />
             ))

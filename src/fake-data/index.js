@@ -5,8 +5,9 @@ export const data = [
     tvl: "$60,000",
     profit: "+10%",
     loss: "",
-    pair: ["Solana (SOL)", "Ethereum (ETH)", "Binance USD (BUSD)"],
+    pair: ["Solana", "Ethereum", "Binance"],
     color: "rgba(234, 179, 0, 0.6)",
+    img: "Bitcoin",
   },
   {
     title: "Solana (SOL)",
@@ -14,8 +15,9 @@ export const data = [
     tvl: "$60,000",
     profit: "",
     loss: "-12.32%",
-    pair: ["Bitcoin (BTC)", "Ethereum (ETH)", "Binance USD (BUSD)"],
+    pair: ["Bitcoin", "Ethereum", "Binance"],
     color: "#DC1FFF",
+    img: "Solana",
   },
   {
     title: "Ethereum (ETH)",
@@ -23,8 +25,9 @@ export const data = [
     tvl: "$60,000",
     profit: "",
     loss: "-11.93%",
-    pair: ["Solana (SOL)", "Bitcoin (BTC)", "Binance USD (BUSD)"],
+    pair: ["Solana", "Bitcoin", "Binance"],
     color: "#EDF0F4",
+    img: "Ethereum",
   },
   {
     title: "Binance USD (BUSD)",
@@ -32,8 +35,9 @@ export const data = [
     tvl: "$60,000",
     profit: "+0.26%",
     loss: "",
-    pair: ["Solana (SOL)", "Ethereum (ETH)", "Binance USD (BUSD)"],
+    pair: ["Solana", "Ethereum", "Binance"],
     color: "#EAB300",
+    img: "Binance",
   },
   {
     title: "Shiba Inu (SHIB)",
@@ -41,7 +45,8 @@ export const data = [
     tvl: "$60,000",
     profit: "",
     loss: "-8.1%",
-    pair: ["Solana (SOL)", "Ethereum (ETH)", "Binance USD (BUSD)"],
+    pair: ["Solana", "Ethereum", "Binance"],
     color: "#E42D04",
+    img: "Shiba",
   },
 ];

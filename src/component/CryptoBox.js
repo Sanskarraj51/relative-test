@@ -17,7 +17,7 @@ const InnerBox = ({ title, children, size }) => {
 
 const CryptoBox = (props) => {
   // ** props destructuring
-  const { title, tvl, price, pair, profit, loss, color } = props;
+  const { title, tvl, price, pair, profit, loss, color, img } = props;
   return (
     <div className="relative font-Tomorrow site-header flex flex-col justify-end items-center w-[290.74px] min-w-[290.74px]  h-[350.08px] mt-[4rem] rounded-3xl p-2 pb-7	 ">
       <div
@@ -26,7 +26,7 @@ const CryptoBox = (props) => {
         }}
         className="logo p-2 "
       >
-        <img src={`./images/${title}.png`} />
+        <img src={`./images/${img}.png`} />
       </div>
       <h6 className="mt-6 mb-2 text-[12px] text-[#737BAE] ">
         {title || "Bitcoin (BTC)"}
